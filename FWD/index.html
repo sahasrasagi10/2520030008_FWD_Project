@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Cricket Information and Analysis Website">
+    <meta name="keywords" content="cricket analysis teams statistics">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cricket Information & Analysis</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Cricket Information & Analysis</h1>
+
+            <p>
+                Explore top cricket teams and analyze their head-to-head dominance.
+            </p>
+
+            <a href="compare.html" class="btn-primary">
+                Start Analysis
+            </a>
+
+        </div>
+    </header>
+
+    <main>
+
+        <section class="teams-section">
+
+            <h2>Top Cricketing Nations</h2>
+
+            <div class="team-grid">
+
+                <a href="team.html?name=India" class="team-card">India</a>
+                <a href="team.html?name=Australia" class="team-card">Australia</a>
+                <a href="team.html?name=England" class="team-card">England</a>
+                <a href="team.html?name=Pakistan" class="team-card">Pakistan</a>
+                <a href="team.html?name=New Zealand" class="team-card">New Zealand</a>
+                <a href="team.html?name=South Africa" class="team-card">South Africa</a>
+                <a href="team.html?name=Sri Lanka" class="team-card">Sri Lanka</a>
+                <a href="team.html?name=West Indies" class="team-card">West Indies</a>
+
+            </div>
+
+        </section>
+
+
+        <section class="live-score-section">
+
+            <h2>Live Cricket Score</h2>
+
+            <div id="liveScoreContainer" class="score-container">
+                Loading live matches...
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+
+        <p>Cricket Information & Analysis System</p>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,206 @@
+:root {
+
+    --primary: #3b0f70;
+    --card: white;
+    --shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+
+}
+
+body {
+
+    font-family: Arial;
+    margin: 0;
+    background: #f5f6fa;
+
+}
+
+.hero {
+
+    background: var(--primary);
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+
+}
+
+.team-grid {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+
+    max-width: 900px;
+    margin: 40px auto;
+
+}
+
+.team-card {
+
+    background: var(--card);
+    padding: 30px;
+
+    width: 180px;
+
+    text-align: center;
+
+    border-radius: 10px;
+
+    text-decoration: none;
+    color: black;
+
+    box-shadow: var(--shadow);
+
+    transition: .3s;
+
+}
+
+.team-card:hover {
+
+    transform: scale(1.05);
+
+}
+
+.page-header {
+
+    background: var(--primary);
+    color: white;
+    text-align: center;
+    padding: 30px;
+
+}
+
+.team-container,
+.compare-wrapper {
+
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+
+}
+
+.team-section,
+.compare-card,
+.result-card {
+
+    background: white;
+    padding: 20px;
+
+    margin-bottom: 20px;
+
+    border-radius: 10px;
+
+    box-shadow: var(--shadow);
+
+}
+
+.inputs-row {
+
+    display: flex;
+    gap: 20px;
+    margin-bottom: 15px;
+
+}
+
+.input-group {
+
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+
+}
+
+input,
+select {
+
+    padding: 8px;
+    margin-top: 5px;
+
+}
+
+.btn-primary {
+
+    background: var(--primary);
+    color: white;
+
+    padding: 10px;
+
+    border: none;
+
+    border-radius: 6px;
+
+    cursor: pointer;
+
+}
+
+.live-score-section {
+
+    max-width: 900px;
+    margin: 40px auto;
+    text-align: center;
+
+}
+
+.performance-table {
+
+    width: 100%;
+    border-collapse: collapse;
+
+}
+
+.performance-table th,
+.performance-table td {
+
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+
+}
+
+.performance-table th {
+
+    background: var(--primary);
+    color: white;
+
+}
+
+@media(max-width:768px) {
+
+    .team-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .inputs-row {
+        flex-direction: column;
+    }
+
+}
+
+.score-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.score-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    width: 260px;
+    text-align: center;
+}
+
+.score-title {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.score-status {
+    color: #444;
+    font-size: 14px;
+    margin-top: 5px;
+}
